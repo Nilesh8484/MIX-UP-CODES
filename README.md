@@ -6,7 +6,7 @@ This repository contains a collection of code, projects, practice files, experim
 
 ---
 
-## 📖 About
+## 📖 About 
 
 The purpose of this repository is to:
 
