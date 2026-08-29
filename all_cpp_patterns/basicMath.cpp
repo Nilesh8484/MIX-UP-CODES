@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+#include<cmath>
 
 void digitcount(int n){
     while(n > 0){
@@ -34,9 +35,26 @@ void palidrome(int n){
     }
 }
 
+void armstromNum(int n){
+    int dup =n;
+    int exp = 3;
+    int sum = 0;
+    while(n>0){
+
+        int lastdig = n%10;
+         sum = sum + (int)pow(n,exp);
+        n/=10;
+    }
+    if (sum == dup){
+        cout << "true";
+    }else {
+        cout << "false";
+    }
+}
+
 int main(){
 
     int n;
     cin >> n;
-    palidrome(n);
+    armstromNum(n);
 }
