@@ -13,9 +13,26 @@ void printname(int i,int n){
     printname(i+1,n);
    
 }
+
+void printnumber(int n)
+{
+    if (n == 0)
+        return;
+
+    printnumber(n - 1);
+    cout << n << " ";
+}
+
+void printrevnumber(int n){
+    if (n==0){
+        return;
+    }
+    cout<<n<<" ";
+    printrevnumber(n-1);
+}
 int main(){
-    int i =1;
+    // int i =1;
 int n  =5;
-printname(i,n);
+printrevnumber(n);
     return 0;
 }
