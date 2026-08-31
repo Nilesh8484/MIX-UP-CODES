@@ -32,16 +32,17 @@ void printrevnumber(int n){
 }
 
 void printnto1(int n){
-    int i = 5;
-    if (n>i){
+    // int i = 5;
+    if (n<1){
         return ;
     }
-    printnto1(n+1);
-    cout << n << endl;
+     cout << n << endl;
+    printnto1(n-1);
+   
 }
 int main(){
     // int i =1;
-int n =1;
+int n =5;
 printnto1(n);
     return 0;
 }
