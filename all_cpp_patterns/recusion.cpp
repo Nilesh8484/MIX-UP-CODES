@@ -30,9 +30,18 @@ void printrevnumber(int n){
     cout<<n<<" ";
     printrevnumber(n-1);
 }
+
+void printnto1(int n){
+    int i = 5;
+    if (n>i){
+        return ;
+    }
+    printnto1(n+1);
+    cout << n << endl;
+}
 int main(){
     // int i =1;
-int n  =5;
-printrevnumber(n);
+int n =1;
+printnto1(n);
     return 0;
 }
