@@ -35,7 +35,7 @@ void printnto1(int n){
     // int i = 5;
     if (n<1){
         return ;
-    }
+    }   
      cout << n << endl;
     printnto1(n-1);
    
